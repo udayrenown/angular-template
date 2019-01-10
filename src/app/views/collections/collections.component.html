@@ -1,0 +1,255 @@
+<div class="animated fadeIn">
+
+  <!--/.row-->
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> All Collection Details
+          <span style="float: right">
+            <button class="btn btn-sm btn-primary" data-toggle="modal" (click)="myModal.show()" ><i class="fa fa-dot-circle-o"></i> Add Collections</button>
+          </span>
+        </div>
+        <div class="card-body">
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+            <tr>
+              <th>Collector Name</th>
+              <th>Lonee Name</th>
+              <th>Amount Paid</th>
+              <th>Amount Pending</th>
+              <th>Date Of Collection</th>
+              <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Vishnu Serghei </td>
+              <td>Lonee 1 <i class="cui-envelope-closed" data-toggle="modal" (click)="loneedtls.show()" ></i></td>
+              <td><span class="badge badge-success">100</span></td>
+              <td><span class="badge badge-warning">1000</span></td>
+              <td>2012/01/01</td>
+              <td>Ammeerpet, Hyderabad</td>
+            </tr>
+            <tr>
+              <td>Vishnu Serghei</td>
+              <td>Lonee 1 <i class="cui-envelope-closed" data-toggle="modal" (click)="loneedtls.show()" ></i></td>
+              <td><span class="badge badge-success">100</span></td>
+              <td><span class="badge badge-warning">1000</span></td>
+              <td>2012/01/01</td>
+              <td>Ammeerpet, Hyderabad</td>
+            </tr>
+            <tr>
+              <td>Vishnu Serghei</td>
+              <td>Lonee 1 <i class="cui-envelope-closed" data-toggle="modal" (click)="loneedtls.show()" ></i></td>
+              <td><span class="badge badge-success">100</span></td>
+              <td><span class="badge badge-warning">1000</span></td>
+              <td>2012/01/01</td>
+              <td>Ammeerpet, Hyderabad</td>
+            </tr>
+            <tr>
+              <td>Vishnu Serghei</td>
+              <td>Lonee 1 <i class="cui-envelope-closed" data-toggle="modal" (click)="loneedtls.show()" ></i></td>
+              <td><span class="badge badge-success">100</span></td>
+              <td><span class="badge badge-warning">1000</span></td>
+              <td>2012/01/01</td>
+              <td>Ammeerpet, Hyderabad</td>
+            </tr>
+            </tbody>
+          </table>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+</div>
+
+
+
+<div bsModal #myModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add New Collection</h4>
+        <button type="button" class="close" (click)="myModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form action="" method="post" class="form-horizontal">
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="village">Collector Name </label>
+            <div class="col-md-8">
+              <select id="collector" name="collector" class="form-control">
+                <option value="" >-- Select Collector --</option>
+                <option value="1" >Viraj</option>
+                <option value="2" >Sahanmuk</option>
+                <option value="3" >Satya</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="cityrtown">City /Town</label>
+            <div class="col-md-8">
+              <select id="cityrtown" name="cityrtown" class="form-control">
+                <option value="" >-- Select City --</option>
+                <option value="1" >Hyderabad</option>
+                <option value="2" >Visakhapatnam</option>
+                <option value="3" >Bhubaneswar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="village">Village</label>
+            <div class="col-md-8">
+              <select id="village" name="village" class="form-control">
+                <option value="" >-- Select Village --</option>
+                <option value="1" >Hyderabad</option>
+                <option value="2" >Visakhapatnam</option>
+                <option value="3" >Bhubaneswar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="line">Line</label>
+            <div class="col-md-8">
+              <select id="line" name="line" class="form-control">
+                <option value="" >-- Select Line --</option>
+                <option value="1" >Hyderabad</option>
+                <option value="2" >Visakhapatnam</option>
+                <option value="3" >Bhubaneswar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="lonee">Lonee</label>
+            <div class="col-md-8">
+              <select id="lonee" name="lonee" class="form-control">
+                <option value="" >-- Select Lonee --</option>
+                <option value="1" >Srinivas</option>
+                <option value="2" >Kiran</option>
+                <option value="3" >Vijay</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="paid">Paid Amount</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" name="paid" id="paid" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="pending">Pending Amount</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" name="pending" id="pending" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-4 col-form-label" for="pending">Date</label>
+            <div class="col-md-8">
+              <input type="date" class="form-control" name="cdate" id="cdate" >
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="myModal.hide()">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div bsModal #loneedtls="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Lonee Details</h4>
+        <button type="button" class="close" (click)="loneedtls.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <table class="table table-bordered table-striped table-sm">
+          <thead>
+          <tr>
+            <th>Collector Name</th>
+            <th>Lonee Name</th>
+            <th>Amount Paid</th>
+            <th>Amount Pending</th>
+            <th>Date Of Collection</th>
+            <th>Address</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Vishnu Serghei </td>
+            <td>Vishnu Serghei</td>
+            <td><span class="badge badge-success">100</span></td>
+            <td><span class="badge badge-warning">1000</span></td>
+            <td>2012/01/01</td>
+            <td>Ammeerpet, Hyderabad</td>
+          </tr>
+          <tr>
+            <td>Vishnu Serghei</td>
+            <td>Vishnu Serghei</td>
+            <td><span class="badge badge-success">100</span></td>
+            <td><span class="badge badge-warning">1000</span></td>
+            <td>2012/01/01</td>
+            <td>Ammeerpet, Hyderabad</td>
+          </tr>
+          <tr>
+            <td>Vishnu Serghei</td>
+            <td>Vishnu Serghei</td>
+            <td><span class="badge badge-success">100</span></td>
+            <td><span class="badge badge-warning">1000</span></td>
+            <td>2012/01/01</td>
+            <td>Ammeerpet, Hyderabad</td>
+          </tr>
+          <tr>
+            <td>Vishnu Serghei</td>
+            <td>Vishnu Serghei</td>
+            <td><span class="badge badge-success">100</span></td>
+            <td><span class="badge badge-warning">1000</span></td>
+            <td>2012/01/01</td>
+            <td>Ammeerpet, Hyderabad</td>
+          </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="loneedtls.hide()">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
